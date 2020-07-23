@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "JavaScriptCore",
+    name: "JavaScriptCoreKit",
     products: [
         .library(name: "SJavaScriptCore", targets: ["SJavaScriptCore"]),
     ],
