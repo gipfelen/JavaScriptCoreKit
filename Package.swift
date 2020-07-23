@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.2
 import PackageDescription
 
 let package = Package(
@@ -7,10 +7,9 @@ let package = Package(
         .library(name: "SJavaScriptCore", targets: ["SJavaScriptCore"]),
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/tris-code/javascript.git",
-            .branch("master")),
-        .package(
+        .package(name: "JavaScript", url: "https://github.com/tris-code/javascript.git", .branch("master")),
+
+        .package(name: "Test",
             url: "https://github.com/tris-code/test.git",
             .branch("master"))
     ],
